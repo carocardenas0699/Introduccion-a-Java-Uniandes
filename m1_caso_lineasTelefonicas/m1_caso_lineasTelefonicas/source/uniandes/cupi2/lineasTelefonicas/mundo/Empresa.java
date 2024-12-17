@@ -1,8 +1,8 @@
 /**
  * ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
  * $Id$
- * Universidad de los Andes (Bogotá - Colombia)
- * Departamento de Ingeniería de Sistemas y Computación 
+ * Universidad de los Andes (Bogotï¿½ - Colombia)
+ * Departamento de Ingenierï¿½a de Sistemas y Computaciï¿½n 
  * Licenciado bajo el esquema Academic Free License version 2.1 
  *
  * Proyecto Cupi2 (http://cupi2.uniandes.edu.co)
@@ -15,6 +15,7 @@ package uniandes.cupi2.lineasTelefonicas.mundo;
 
 /**
  * Clase que representa la empresa
+ * Prueba de modificacion 1
  */
 public class Empresa
 {
@@ -24,47 +25,47 @@ public class Empresa
     //-----------------------------------------------------------------
 
     /**
-     * Línea telefónica número 1
+     * Lï¿½nea telefï¿½nica nï¿½mero 1
      */
     private LineaTelefonica linea1;
 
     /**
-     * Línea telefónica número 2
+     * Lï¿½nea telefï¿½nica nï¿½mero 2
      */
     private LineaTelefonica linea2;
 
     /**
-     * Línea telefónica número 3
+     * Lï¿½nea telefï¿½nica nï¿½mero 3
      */
     private LineaTelefonica linea3;
 
     //-----------------------------------------------------------------
-    // Métodos
+    // Mï¿½todos
     //-----------------------------------------------------------------
 
     /**
-     * Inicializa las líneas telefónicas de la empresa <br>
-     * <b>post: </b> Se inicializaron las 3 líneas telefónicas.
+     * Inicializa las lï¿½neas telefï¿½nicas de la empresa <br>
+     * <b>post: </b> Se inicializaron las 3 lï¿½neas telefï¿½nicas.
      */
     public void inicializar( )
     {
         //
-        //Inicializa la línea 1
+        //Inicializa la lï¿½nea 1
         linea1 = new LineaTelefonica( );
         linea1.inicializar( );
         //
-        //Inicializa la línea 2
+        //Inicializa la lï¿½nea 2
         linea2 = new LineaTelefonica( );
         linea2.inicializar( );
         //
-        //Inicializa la línea 3
+        //Inicializa la lï¿½nea 3
         linea3 = new LineaTelefonica( );
         linea3.inicializar( );
     }
 
     /**
-     * Devuelve la línea 1
-     * @return Línea 1
+     * Devuelve la lï¿½nea 1
+     * @return Lï¿½nea 1
      */
     public LineaTelefonica darLinea1( )
     {
@@ -72,8 +73,8 @@ public class Empresa
     }
 
     /**
-     * Devuelve la línea 2
-     * @return Línea 2
+     * Devuelve la lï¿½nea 2
+     * @return Lï¿½nea 2
      */
     public LineaTelefonica darLinea2( )
     {
@@ -81,8 +82,8 @@ public class Empresa
     }
 
     /**
-     * Devuelve la línea 3
-     * @return Línea 3
+     * Devuelve la lï¿½nea 3
+     * @return Lï¿½nea 3
      */
     public LineaTelefonica darLinea3( )
     {
@@ -90,9 +91,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada local a la línea telefónica 1 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 1
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada local a la lï¿½nea telefï¿½nica 1 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 1
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaLocalLinea1( int minutos )
     {
@@ -100,9 +101,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada local a la línea telefónica 2 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 2
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada local a la lï¿½nea telefï¿½nica 2 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 2
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaLocalLinea2( int minutos )
     {
@@ -110,9 +111,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada local a la línea telefónica 3 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 3
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada local a la lï¿½nea telefï¿½nica 3 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 3
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaLocalLinea3( int minutos )
     {
@@ -120,9 +121,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada de larga distancia a la línea telefónica 1 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 1
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada de larga distancia a la lï¿½nea telefï¿½nica 1 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 1
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaLargaDistanciaLinea1( int minutos )
     {
@@ -130,9 +131,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada de larga distancia a la línea telefónica 2 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 2
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada de larga distancia a la lï¿½nea telefï¿½nica 2 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 2
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaLargaDistanciaLinea2( int minutos )
     {
@@ -140,9 +141,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada de larga distancia a la línea telefónica 3 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 3
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada de larga distancia a la lï¿½nea telefï¿½nica 3 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 3
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaLargaDistanciaLinea3( int minutos )
     {
@@ -150,9 +151,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada a celular a la línea telefónica 1 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 1
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada a celular a la lï¿½nea telefï¿½nica 1 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 1
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaCelularLinea1( int minutos )
     {
@@ -160,9 +161,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada a celular a la línea telefónica 2 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 2
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada a celular a la lï¿½nea telefï¿½nica 2 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 2
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaCelularLinea2( int minutos )
     {
@@ -170,9 +171,9 @@ public class Empresa
     }
 
     /**
-     * Agrega una llamada a celular a la línea telefónica 3 <br>
-     * <b>post: </b> Se agrega la llamada a la línea 3
-     * @param minutos Número de minutos de la llamada. minutos > 0.
+     * Agrega una llamada a celular a la lï¿½nea telefï¿½nica 3 <br>
+     * <b>post: </b> Se agrega la llamada a la lï¿½nea 3
+     * @param minutos Nï¿½mero de minutos de la llamada. minutos > 0.
      */
     public void agregarLlamadaCelularLinea3( int minutos )
     {
@@ -180,8 +181,8 @@ public class Empresa
     }
 
     /**
-     * Devuelve el nú8mero total de llamadas realizadas
-     * @return total de llamadas de las tres líneas
+     * Devuelve el nï¿½8mero total de llamadas realizadas
+     * @return total de llamadas de las tres lï¿½neas
      */
     public int darTotalNumeroLlamadas( )
     {
@@ -191,7 +192,7 @@ public class Empresa
 
     /**
      * Devuelve el total de minutos consumidos
-     * @return total de minutos de las tres líneas
+     * @return total de minutos de las tres lï¿½neas
      */
     public int darTotalMinutos( )
     {
@@ -201,7 +202,7 @@ public class Empresa
 
     /**
      * Devuelve el costo total de las llamadas realizadas
-     * @return costo total de las tres líneas
+     * @return costo total de las tres lï¿½neas
      */
     public double darTotalCostoLlamadas( )
     {
@@ -210,7 +211,7 @@ public class Empresa
     }
 
     /**
-     * Devuelve el costo promedio de un minuto, según los minutos consumidos <br>
+     * Devuelve el costo promedio de un minuto, segï¿½n los minutos consumidos <br>
      * <b>pre: </b> TotalMinutos > 0
      * @return Costo promedio por minuto.
      */
@@ -221,7 +222,7 @@ public class Empresa
     }
 
     /**
-     * Reinicia todas las líneas telefónicas.
+     * Reinicia todas las lï¿½neas telefï¿½nicas.
      */
     public void reiniciar( )
     {
@@ -231,11 +232,11 @@ public class Empresa
     }
 
     //-----------------------------------------------------------------
-    // Puntos de Extensión
+    // Puntos de Extensiï¿½n
     //-----------------------------------------------------------------
 
     /**
-     * Método para la extensión 1
+     * Mï¿½todo para la extensiï¿½n 1
      * @return Respuesta 1
      */
     public String metodo1( )
@@ -244,7 +245,7 @@ public class Empresa
     }
 
     /**
-     * Método para la extensión2
+     * Mï¿½todo para la extensiï¿½n2
      * @return Respuesta 2
      */
     public String metodo2( )
