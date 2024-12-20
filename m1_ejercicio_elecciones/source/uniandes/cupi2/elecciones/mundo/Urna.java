@@ -467,7 +467,18 @@ public class Urna
     {
     	return ((double) candidato3.darVotosInfluenciaInternet() / calcularTotalVotosInternet( ))*100;
     }
-
+    
+    /**
+    * Devuelve el promedio de porcentaje de influencia de votos de television para todos los candidatos.
+    * @return promedio del porcentaje de votos influenciados por televisiÃ³n para todos los candidatos.
+    */
+    public double darPromedioPorcentajeVotosInfluenciaTelevisionRadioCandidatos()
+    {
+        return (candidato1.darPorcentajeVotosInfluenciaTelevisionCanditato() + candidato2.darPorcentajeVotosInfluenciaTelevisionCanditato() + candidato3.darPorcentajeVotosInfluenciaTelevisionCanditato())/3;
+        
+        
+    }
+    
     /**
      * Restaura la urna al estado inicial, todos los candidatos quedan sin votos y costo de campa�a en 0
      */

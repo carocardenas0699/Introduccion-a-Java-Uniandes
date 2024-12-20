@@ -60,6 +60,16 @@ public class Candidato
     private int votosInternet;
     
     /**
+     * Número de votos influenciados por televisión.
+     */
+    private int votosTelevision;
+    
+    /**
+     * Número de votos influenciados por radio.
+     */
+    private int votosRadio;
+    
+    /**
      * N�mero de votos de g�nero femenino.
      */
     private int votosFem;
@@ -108,6 +118,8 @@ public class Candidato
         costoCampanha = 0;
         votos = 0;
         votosInternet = 0;
+        votosTelevision = 0;
+        votosRadio = 0;
         votosFem = 0;
         votosMasc = 0;
         votosJoven = 0;
@@ -179,6 +191,24 @@ public class Candidato
     }
     
     /**
+    * Devuelve el número de votos influenciados por television.
+    * @return número de votos influenciados por television.
+    */
+    public int darVotosInfluenciaTelevision()
+    {
+        return votosTelevision;
+    }
+    
+    /**
+     * Devuelve el número de votos influenciados por radio.
+     * @return número de votos influenciados por radio.
+     */
+     public int darVotosInfluenciaRadio()
+     {
+         return votosRadio;
+     }
+     
+    /**
      * Devuelve el n�mero de votos de g�nero femenino.
      * @return n�mero de votos de g�nero femenino.
      */
@@ -239,6 +269,7 @@ public class Candidato
     public void agregarVotoTelevision( )
     {
         costoCampanha = costoCampanha + 1000;
+        votosTelevision ++;
     }
 
     /**
@@ -249,6 +280,7 @@ public class Candidato
     public void agregarVotoRadio( )
     {
         costoCampanha = costoCampanha + 500;
+        votosRadio ++;
     }
 
     /**
@@ -259,7 +291,7 @@ public class Candidato
     public void agregarVotoInternet( )
     {
     	costoCampanha += 100;
-    	votosInternet += 1;
+    	votosInternet ++;
     }
     
     /**
@@ -306,7 +338,17 @@ public class Candidato
     {
     	votosMayor += 1;
     }
-
+    
+    /**
+    * Devuelve el porcentaje de votos de influencia teniendo en cuenta los votos de televisiÃ³n 
+    * sobre el total de votos recibidos.
+    * @return procentaje de votos total que fueron recibidos por television 
+    */
+    public double darPorcentajeVotosInfluenciaTelevisionCanditato()
+    {
+        return ((double) votosTelevision / votos)*100;
+    }
+    
     /**
      * Se reinicia el conteo de votos 
      * <b>post: </b> votos = 0. votosGeneroFemenino = 0. votosGeneroMasculino = 0. votosEdadJoven = 0.
@@ -316,6 +358,8 @@ public class Candidato
     {
     	votos = 0;
         votosInternet = 0;
+        votosTelevision = 0;
+        votosRadio = 0;
         votosFem = 0;
         votosMasc = 0;
         votosJoven = 0;
